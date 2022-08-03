@@ -1,0 +1,92 @@
+css-reset
+
+    /*////////////////////////
+        Table of Contents
+        1. Global Styles
+        2. Typography
+        3. Layout
+            3.1 Reusables
+            3.2 Other
+        4. Areas
+            4.1 Header
+            4.2 Introduction
+            4.3 Work
+            4.4 Services
+            4.5 Contact
+            4.6 Footer
+        5. Media Queries
+    ////////////////////////*/
+
+    /* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-color: #5722CD;
+    color: white;
+}
+
+.inner-container {
+    flex-basis: 1400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    list-style: none;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#btn {
+    background-color: #ED4385;
+    color: white;
+    height: 35px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    box-shadow:  2px 2px 7px 0px rgba(0,0,0,0.40);
+
+}
