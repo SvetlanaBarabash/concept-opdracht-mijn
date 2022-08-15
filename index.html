@@ -2,35 +2,192 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="base/base-styles.css">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="fonts.css">
+    <title>Rekupe</title>
 </head>
 <body>
-<header class="outer-container">
-    <div class="inner-container">
-        <nav class="navbar">
-            <ul>
-                <li>Case Studies</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+<header class="header__outer-container">
+    <div class="header__inner-container">
+        <nav class="header__navbar" role="navigation" aria-label="Main">
+            <ul class="header_list">
+                <li class="header__item">Case Studies</li>
+                <li class="header__item">Services</li>
+                <li class="header__item">
+                    <a href="#form">Contact Us</a>
+                </li>
             </ul>
         </nav>
-        <div class="welcome">
-            <h1>Your website is an investment in the success of your business.</h1>
-            <p>We are here to help you succeed.</p>
-            <button id="btn">Let's work together</button>
+        <div class="header__text">
+            <h1 class="header__title">Your website is an investment in the<br>success of your business.</h1>
+            <p class="header__subtitle">We are here to help you succeed.</p>
+            <button type="button" class="header__btn--active">Let's work together</button>
+        </div>
+        <div class="header__background-image">
+            <img src="./assets/squiggle_line_stripe.svg" alt="Squiggle">
         </div>
     </div>
 </header>
-
+<div class="slanted-border"></div>
 <main>
+    <section>
+        <div class="info">
+            <h2>Rekupe is a digital agency in Los Angeles.</h2>
+            <h2>We use strategic UX, SEO optimization and beautiful<br>visual designs to help your business grow.</h2>
+            <h2>We see every project as a fresh opportunity, pushing<br>ourselves to create new digital experiences.
+            </h2>
+            <p>Have a question? <a href="#form" target="_self">Click here</a> to contact us!</p>
+        </div>
+    </section>
+    <section class="articles">
+        <article class="article-container">
+            <div class="article-text">
+                <h2>Rolling Stone</h2>
+                <br>
+                <img src="./assets/squiggle_line.svg" class="article-container__squiggle" alt="Squiggle">
+                <br>
+                <p>
+                    You know Rolling Stone. It’s the definitive<br>voice in music, politics and culture. It’s a<br>global icon.
+                </p>
+                <br><br>
+                <span class="uppers">view project _</span>
+            </div>
+            <span class="image-wrapper">
+                <img src="/assets/work-image-01.jpeg" alt="image-laptop">
+            </span>
+        </article>
+        <article class="article-container">
+            <span class="image-wrapper">
+                <img src="./assets/work-image-02.jpeg" alt="image-book">
+            </span>
+            <div class="article-text" id="right">
+                <h2>Variety</h2>
+                <br>
+                <img src="./assets/squiggle_line.svg" class="article-container__squiggle" alt="Squiggle">
+                <br>
+                <p>Variety is an industry leader for breaking<br>entertainment news, reviews and box<br>office results
+                    with archive of content<br>dating back to 1905.</p>
+                <br><br>
+                <span class="uppers">view project _</span>
+            </div>
 
+        </article>
+        <article class="article-container">
+            <div class="article-text">
+                <h2>Worth</h2>
+                <br>
+                <img src="./assets/squiggle_line.svg" class="article-container__squiggle" alt="Squiggle">
+                <br>
+                <p>A global media platform connecting a<br>community that embraces worth beyond<br>wealth.</p>
+                <br><br>
+                <span class="uppers">view project _</span>
+            </div>
+            <span class="image-wrapper">
+                <img src="assets/work-image-03.jpeg" alt="Tablet">
+            </span>
+        </article>
+    </section>
+    <section class="services">
+        <div class="services__outer-container">
+            <div class="services__block-container">
+                <div class="services__block">
+                    <img src="./assets/icon_web-design.svg" class="services__block-image" alt="Web design">
+                    <h3>Web Design</h3>
+                    <br>
+                    <p>Good web design is how companies stand out from their competitors.
+                        High quality web design leads to increased user conversion and engagement.
+                        Through a proven web design process, we help clients launch websites and products that improve
+                        on their bottom line.</p>
+                </div>
+
+                <div class="services__block">
+                    <img src="./assets/icon_web-development.svg" class="services__block-image"
+                         alt="Web development">
+                    <h3>Web Development</h3><br>
+                    <p>Modern websites need to be responsive and fully functional at all sizes.
+                        We develop all of our sites with a mobile first approach and ensure that our code quality is
+                        clean, organized and performant.
+                        Already have a design but need it developed? We’re here to help!</p>
+                </div>
+
+                <div class="services__block">
+                    <img src="./assets/icon_ux.svg" class="services__block-image" alt="User Experience">
+                    <h3>User Experience</h3>
+                    <br>
+                    <p>In order to build successful products you have to understand the user.
+                        We create user personas, wireframes and prototypes to test with users.
+                        This allows us to gather feedback which helps to shape the product and can quickly eliminate
+                        potential risks – saving you time and money.</p>
+                </div>
+            </div>
+            <div class="services__block-container">
+
+                <div class="services__block">
+                    <img src="./assets/icon_graphic-design.svg" class="services__block-image" alt="Graphic design">
+                    <h3>Logo Design + Branding</h3>
+                    <br>
+                    <p>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily
+                        recognizable logos and brand identity.
+                        The best brands stand out from the crowd by having a clear and unique point of view.
+                        We will work with you to understand your vision and help create a unique brand identity and
+                        style guide for your company.</p>
+                </div>
+
+                <div class="services__block">
+                    <img src="./assets/icon_seo.svg" class="services__block-image" alt="SEO">
+                    <h3>SEO</h3>
+                    <br>
+                    <p>Do you want your site to rank higher in search results? Google is constantly changing their
+                        algorithms for how they rank pages.
+                        Don’t worry about constantly playing catch-up.
+                        We will make sure your website it optimized, providing you the best opportunities for organic
+                        search exposure.</p>
+                </div>
+
+                <div class="services__block">
+                    <img src="./assets/icon_copywriting.svg" class="services__block-image" alt="Copy Writing">
+                    <h3>Copy Writing</h3>
+                    <br>
+                    <p>Brand messaging needs to be clear, direct and easy to understand to be effective.
+                        A unique tone of voice will help you stand out from the crowd and build brand loyalty.
+                        We work with you to establish your brand bible and ensure your messaging is focused and
+                        targeted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact__outer-container" id="contact-us">
+        <a id="form"></a>
+        <div class="contact__inner-container">
+            <h1>Let's work together</h1>
+            <br><br>
+            <p>Have a question? Need a quote? Let us know!</p>
+            <br><br>
+
+            <label for="full-name-field">Name</label>
+            <input type="text" id="full-name-field" name="fullname" placeholder="Name"/>
+            <br><br>
+
+            <label for="email-field">Email</label>
+            <input type="text" id="email-field" name="email" placeholder="Email"/>
+            <br><br>
+
+            <label for="message-field">Message</label>
+            <textarea id="message-field" name="message" rows="4" cols="50" placeholder="Message"></textarea>
+            <br><br>
+
+            <button class="contact__btn">send</button>
+
+
+        </div>
+    </section>
 </main>
 
-<footer>
-
-</footer>
+<div class="footer">
+    <span>Business website opdracht © NOVI Hogeschool 2022</span>
+</div>
 
 </body>
 </html>

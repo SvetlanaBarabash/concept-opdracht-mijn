@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Merriwater;
+    src: url("fonts/merriweather-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: Merriwater;
+    src: url("fonts/merriweather-bold-webfont.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Merriwater;
+    src: url("fonts/merriweather-black-webfont.woff");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/roboto-medium-webfont.woff");
+}
+
+@font-face {
+    font-family: Roboto;
+    src:  url("fonts/roboto-regular-webfont.woff");
+}
