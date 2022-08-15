@@ -24,16 +24,16 @@ img {
 }
 
 :root {
-    --paars: #5722CD;
-    --blauw: #4845E4;
-    --roze: #ED4385;
-    --zwart: #0C0C0C;
-    --lichtpaars: #F2F0FF;
-    --lichtgrijs: #F3F6F9;
-    --grijs: #7A7A7A;
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --black: #0C0C0C;
+    --lilac: #F2F0FF;
+    --lightgray: #F3F6F9;
+    --gray: #7A7A7A;
+    --white: #ffffff;
 }
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
 h1, h2, h3, h4, h5, h6 {
     font-family: Merriwater, sans-serif;
 }
@@ -65,7 +65,7 @@ img {
     justify-content: center;
     width: 100%;
     background: linear-gradient(130deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 50%);
-    color: white;
+    color: var(--white);
 }
 
 .header__outer-container::after {
@@ -80,7 +80,6 @@ img {
     width: 100%;
     z-index: -1;
 }
-
 
 .header__inner-container {
     flex-basis: 1400px;
@@ -127,8 +126,8 @@ img {
 
 .header__btn--active {
     margin: auto;
-    background-color: #ED4385;
-    color: white;
+    background-color: var(--pink);
+    color: var(--white);
     height: 35px;
     width: 150px;
     border-radius: 30px;
@@ -144,19 +143,8 @@ img {
 
 .header__item a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
-
-/*.slanted-border {*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-style: solid;*/
-/*    border-width: 0 2000px 60px 0;*/
-/*    border-color: transparent blue transparent transparent;*/
-/*  !*  border-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) 1;*!*/
-/*}*/
-
-/*______________________ 4.2 Introduction _________________________*/
 
 .info {
     display: flex;
@@ -165,28 +153,26 @@ img {
     gap: 40px;
     text-align: center;
     height: 600px;
-    color: #5722CD;
+    color: var(--purple);
 }
 
 .info p {
     margin-top: 100px;
-    color: black;
+    color: var(--black);
 }
 
 .info a, .info a:active {
     text-decoration: none;
-    color: var(--paars);
+    color: var(--purple);
 }
 
-/*___________________________ 4.3 Work _____________________________*/
-
 .articles {
-    background-color: #F3F6F9;
+    background-color: var(--lightgray);
     padding: 40px 0 80px 10px;
 }
 
 .article-container {
-    background-color: #F3F6F9;
+    background-color: var(--lightgray);
     display: flex;
     flex-direction: row;
     padding: 40px 20px;
@@ -223,13 +209,11 @@ img {
 
 .uppers {
     text-transform: uppercase;
-    color: var(--paars);
+    color: var(--purple);
     font-weight: bold;
     font-size: x-small;
     letter-spacing: 2px;
 }
-
-/* _______________________ 4.4 Services _________________________*/
 
 .services {
     height: 700px;
@@ -250,13 +234,13 @@ img {
 }
 
 .services__block {
-    border: 1px solid #5722CD;
+    border: 1px solid var(--purple);
     text-align: left;
     width: 300px;
     height: 300px;
     flex-grow: 0;
     flex-shrink: 1;
-    color: #5722CD;
+    color: var(--purple);
     padding: 0 25px 0 25px;
     display: flex;
     justify-content: center;
@@ -265,7 +249,7 @@ img {
 }
 
 .services__block p {
-    color: #7A7A7A;
+    color: var(--gray);
     font-size: 10px;
 }
 
@@ -274,13 +258,12 @@ img {
     height: 60px;
 }
 
-/* ______________________________ 4.5 Contact __________________________*/
 .contact__outer-container {
     background: linear-gradient(130deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 75%);
 }
 
 .contact__inner-container {
-    color: white;
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,7 +290,7 @@ img {
 }
 
 .contact__btn {
-    background-color: #ED4385;
+    background-color: var(--pink);
     color: white;
     height: 40px;
     width: 150px;
@@ -316,17 +299,13 @@ img {
     box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.40);
 }
 
-/* _____________________________ 4.6 Footer __________________________*/
 .footer {
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: var(--black);
     color: white;
     text-align: center;
     padding: 30px;
 }
-
-
-/* __________________________ 5. Media Queries ________________________*/
